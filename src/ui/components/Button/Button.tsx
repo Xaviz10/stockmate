@@ -1,8 +1,14 @@
 import tw from "twin.macro";
-import styled from "styled-components";
+import { styled as styledMUI } from "@mui/material/styles";
+import { Button as ButtonMUI, ButtonProps } from "@mui/material";
 
-export const Button = styled.button`
-  ${tw`
-     
-    `}
-`;
+interface ButtonCustomProps extends ButtonProps {
+  isIcon?: boolean;
+}
+
+export const Button = styledMUI(ButtonMUI)<ButtonCustomProps>(({ isIcon }) => {
+  return {
+    padding: isIcon ? "0" : "8px",
+    minWidth: isIcon ? "min-content" : "auto",
+  };
+});

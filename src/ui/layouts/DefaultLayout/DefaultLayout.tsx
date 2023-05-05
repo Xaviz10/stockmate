@@ -5,10 +5,8 @@ import { StyledDefaultLayout } from "./DefaultLayout.styles";
 export const DefaultLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <StyledDefaultLayout>
-      <Header />
       <Drawer />
       <main>{children}</main>
-      <Footer />
     </StyledDefaultLayout>
   );
 };
