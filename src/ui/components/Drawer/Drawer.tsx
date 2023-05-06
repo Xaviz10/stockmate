@@ -32,7 +32,7 @@ export const Drawer: FC<DrawerProps> = ({
           {openState && <StockMateCopy />}
         </StyledContainerLogo>
         {openState && (
-          <Button isIcon onClick={handleCloseDrawer}>
+          <Button onClick={handleCloseDrawer} sx={{ padding: 0 }}>
             <HamOpenIcon />
           </Button>
         )}

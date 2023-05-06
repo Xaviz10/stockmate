@@ -1,1 +1,2 @@
-export * from "./stock";
+export * from "./products";
+export * from "./orders";

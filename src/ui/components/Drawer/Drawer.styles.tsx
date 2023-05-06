@@ -32,6 +32,8 @@ export const StyledDrawer = styledMUI(Drawer)<DrawerProps>(
         }),
         overflowX: "hidden",
         "& .MuiDrawer-paper": {
+          backgroundColor: "#ffffff",
+
           width: "211px",
           transition: theme.transitions.create("width", {
             easing: theme.transitions.easing.sharp,

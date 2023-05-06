@@ -1,4 +1,4 @@
-export interface ExampleEntity {
+export interface OrderEntity {
   name: string;
   lastName: string;
 }

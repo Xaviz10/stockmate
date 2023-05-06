@@ -6,9 +6,6 @@ interface ButtonCustomProps extends ButtonProps {
   isIcon?: boolean;
 }
 
-export const Button = styledMUI(ButtonMUI)<ButtonCustomProps>(({ isIcon }) => {
-  return {
-    padding: isIcon ? "0" : "8px",
-    minWidth: isIcon ? "min-content" : "auto",
-  };
+export const Button = styledMUI(ButtonMUI)<ButtonProps>(({}) => {
+  return {};
 });

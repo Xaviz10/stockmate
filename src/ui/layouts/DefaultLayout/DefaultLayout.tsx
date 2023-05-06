@@ -6,7 +6,7 @@ export const DefaultLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <StyledDefaultLayout>
       <Drawer />
-      <main>{children}</main>
+      <main style={{ width: "100%" }}>{children}</main>
     </StyledDefaultLayout>
   );
 };
