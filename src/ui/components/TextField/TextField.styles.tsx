@@ -34,10 +34,12 @@ export const StyledInput = styled.input.attrs({
       text-black
       placeholder-gray-500
       
-      disabled:(bg-gray-400 border-gray-400 text-gray-600 placeholder-gray-600)
+      disabled:(bg-gray-100 border-gray-200 text-gray-600 placeholder-gray-600)
+
+      
   `}
 
-  ${({ error }) => error && tw``}
+  ${({ error }) => error && tw`border-red-600`}
 `;
 
 export const StyledIconContainer = styled.div.attrs({
@@ -76,8 +78,10 @@ export const StyledHelperText = styled.p.attrs({
   className: "StyledHelperText",
 })`
   ${tw`
-    text-base
-    leading-6
+  absolute
+    text-xs
+    text-red-600
+    bottom-0
     `}
   word-break: break-word;
 `;

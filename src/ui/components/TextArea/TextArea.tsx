@@ -50,7 +50,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
             {label} {!!required && <span className="text-primary-100"> *</span>}
           </StyledLabel>
         )}
-        <div className="w-full relative">
+        <div className="w-full relative mb-4">
           <StyledTextArea
             id={id}
             name={name}

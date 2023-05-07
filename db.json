@@ -1,0 +1,119 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "reference": "2a",
+      "name": "Product 2222234234234234234",
+      "description": "Description product 2",
+      "price": 2000,
+      "taxes": 0.2
+    },
+    {
+      "id": 3,
+      "reference": "3a",
+      "name": "Product 3",
+      "description": "Description product 3",
+      "price": 3000,
+      "taxes": 0.3
+    },
+    {
+      "reference": "4a",
+      "name": "Product 43",
+      "description": "Product 444Product 444Product 444Product 444Product 444Product 444Product 444Product 444Product 444",
+      "price": "40001",
+      "taxes": "0.12",
+      "id": 8
+    },
+    {
+      "reference": "jjj",
+      "name": "New jjj",
+      "description": "NEw jjjjfjjfsdjfjsdjfjsdfjsdjf",
+      "price": "9989",
+      "taxes": "0.1",
+      "id": 9
+    },
+    {
+      "reference": "bbbb",
+      "name": "dsfsdfsdf",
+      "description": "fwerwerwerwer",
+      "price": "12323",
+      "taxes": "0.3",
+      "id": 10
+    },
+    {
+      "reference": "bbbbq",
+      "name": "dsfsdfsdf",
+      "description": "fwerwerwerwer",
+      "price": "12323",
+      "taxes": "0.3",
+      "id": 11
+    },
+    {
+      "reference": "sdfsf",
+      "name": "rwerdsfs ds sdf",
+      "description": "sdfsdfsd wef ",
+      "price": "4234234",
+      "taxes": "0.4",
+      "id": 12
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "articles": [
+        {
+          "id": 2,
+          "reference": "2a",
+          "quantity": 2
+        },
+        {
+          "id": 2,
+          "reference": "2a",
+          "quantity": 2
+        }
+      ],
+      "name": "Product 1",
+      "description": "Description product 1",
+      "price": 1000,
+      "priceWithTaxes": 1100
+    },
+    {
+      "id": 2,
+      "articles": [
+        {
+          "id": 2,
+          "reference": "2a",
+          "quantity": 2
+        },
+        {
+          "id": 2,
+          "reference": "2a",
+          "quantity": 2
+        }
+      ],
+      "name": "Product 1",
+      "description": "Description product 1",
+      "price": 1000,
+      "priceWithTaxes": 1100
+    },
+    {
+      "id": 3,
+      "articles": [
+        {
+          "id": 2,
+          "reference": "2a",
+          "quantity": 2
+        },
+        {
+          "id": 2,
+          "reference": "2a",
+          "quantity": 2
+        }
+      ],
+      "name": "Product 1",
+      "description": "Description product 1",
+      "price": 1000,
+      "priceWithTaxes": 1100
+    }
+  ]
+}

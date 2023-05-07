@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import Store from "./data/dto/store";
 import { Toaster } from "react-hot-toast";
 
-axios.defaults.baseURL = import.meta.env.REACT_APP_API_BASE;
+axios.defaults.baseURL = import.meta.env.VITE_APP_API_BASE;
 
 const handleRequestSuccess = (
   request: AxiosRequestConfig

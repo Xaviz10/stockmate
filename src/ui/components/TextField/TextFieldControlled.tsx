@@ -3,7 +3,7 @@ import { Control, FieldValues, useController } from "react-hook-form";
 import { TextField, InputProps } from "./TextField";
 
 interface TextFieldControlledProps extends InputProps {
-  control?: Control<FieldValues, any>;
+  control: Control<FieldValues, any>;
   id: string;
   name: string;
   defaultValue?: string;
@@ -34,7 +34,7 @@ export const TextFieldControlled: FC<TextFieldControlledProps> = ({
     },
     defaultValue: defaultValue,
   });
-  
+
   return (
     <TextField
       onChange={onChange}

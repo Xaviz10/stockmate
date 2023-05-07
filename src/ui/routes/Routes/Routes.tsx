@@ -1,12 +1,15 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Stock } from "../../pages";
+import { Products, Orders, NewProduct } from "../../pages";
 import { PrivateRoute } from "./PrivateRoute";
 
 export const AppRoutes = () => (
   <Routes>
     {/* Public */}
-    <Route path="/" element={<Stock />} />
+    <Route path="/orders" element={<Orders />} />
+    <Route path="/products" element={<Products />} />
+    <Route path="/new-product" element={<NewProduct />} />
+    <Route path="/" element={<Orders />} />
 
     <Route path="*" element={<></>} />
   </Routes>

@@ -1,1 +1,3 @@
-export * from "./homeViewModel";
+export * from "./newProductViewModel";
+export * from "./productsViewModel";
+export * from "./ordersViewModel";

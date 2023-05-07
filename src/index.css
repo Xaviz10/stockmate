@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #fafafa;
 }
 
 body {
@@ -14,7 +15,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+textarea {
+  resize: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

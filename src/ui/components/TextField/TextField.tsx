@@ -42,14 +42,14 @@ export const TextField = forwardRef<HTMLInputElement, InputProps>(
 
     return (
       <div
-        className={`relative flex flex-col w-full gap-y-1 items-start text-left ${className}`}
+        className={`relative flex flex-col gap-y-1 items-start text-left ${className}`}
       >
         {!!label && (
           <StyledLabel textLabelColor={textLabelColor} htmlFor={id}>
             {label} {!!required && <span className="text-primary-100"> *</span>}
           </StyledLabel>
         )}
-        <div className="w-full relative">
+        <div className="w-full relative mb-4">
           <StyledInput
             error={error}
             id={id}

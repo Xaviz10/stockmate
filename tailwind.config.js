@@ -1,15 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  purge: {
-    content: ["./src/ui/**/**/*.{ html, js, jsx, ts, tsx }"],
-  },
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {},
     extend: {
       colors: {
-        primary: {},
-        secondary: {},
+        primary: { DEFAULT: "#0F60FF" },
+        secondary: { DEFAULT: "0FB7FF" },
       },
     },
   },
