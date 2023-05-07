@@ -9,6 +9,7 @@ import {
 } from "./Drawer.styles";
 import { FC } from "react";
 import {
+  AddProductIcon,
   HamOpenIcon,
   ProductIcon,
   ShoppingCarIcon,
@@ -56,6 +57,16 @@ export const Drawer: FC<DrawerProps> = ({
             sx={{ display: openState ? "inline-block" : "none" }}
           >
             {openState ? "Products list" : ""}
+          </StyledListItemText>
+        </StyledListItemButton>
+        <StyledListItemButton onClick={() => handleNavigation("/new-product")}>
+          <StyledListItemIcon>
+            <AddProductIcon />
+          </StyledListItemIcon>
+          <StyledListItemText
+            sx={{ display: openState ? "inline-block" : "none" }}
+          >
+            {openState ? "New product" : ""}
           </StyledListItemText>
         </StyledListItemButton>
       </List>
