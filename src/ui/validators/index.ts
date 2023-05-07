@@ -1,2 +1,3 @@
 export * from "./commonSchemas";
-export * from "./contactFormSchema";
+export * from "./searchProductSchema";
+export * from "./productSchema";

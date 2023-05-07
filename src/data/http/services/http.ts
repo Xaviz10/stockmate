@@ -12,6 +12,9 @@ export function httpService(): Http {
     patch<T>(url: string, data: T): Promise<AxiosResponse> {
       return axios.patch(url, data);
     },
+    put<T>(url: string, data: T): Promise<AxiosResponse> {
+      return axios.put(url, data);
+    },
     get<T>(url: string, params?: T): Promise<AxiosResponse> {
       return axios.get(url, { params });
     },

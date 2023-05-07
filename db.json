@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "reference": "1a",
-      "name": "Product 1",
-      "description": "Description product 1",
-      "price": 1000,
-      "taxes": 0.1
-    },
-    {
       "id": 2,
       "reference": "2a",
       "name": "Product 2222234234234234234",
@@ -25,12 +17,12 @@
       "taxes": 0.3
     },
     {
-      "id": 4,
       "reference": "4a",
-      "name": "Product 4",
-      "description": "Description product 4",
-      "price": 4000,
-      "taxes": 0.4
+      "name": "Product 43",
+      "description": "Product 444Product 444Product 444Product 444Product 444Product 444Product 444Product 444Product 444",
+      "price": "40001",
+      "taxes": "0.12",
+      "id": 8
     }
   ],
   "orders": [

@@ -17,6 +17,12 @@ export const StyledDataGrid = styledMui(DataGrid)<DataGridProps>(
     "& .MuiDataGrid-columnHeaderTitle": {
       color: "#8B909A",
     },
+    "& .MuiDataGrid-overlayWrapper": {
+      height: "48px",
+    },
+    "& .MuiDataGrid-cell:focus-within": {
+      outline: "none",
+    },
     "& .MuiDataGrid-footerContainer": {
       display: "none",
     },
