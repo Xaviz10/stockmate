@@ -12,6 +12,20 @@ import { ProductModel, ProductsModel } from "../models";
 export function productsDataService(): ProductsRepository {
   const { get, post, put, deleteRequest } = httpService();
   return {
+    async getAllProducts({ success, error }: productsInput) {
+      try {
+        const response: ProductsModel = await get(`${Endpoints.products}`);
+
+        if (success) {
+          success(response);
+        }
+      } catch (e) {
+        if (error) {
+          error(e);
+        }
+      }
+    },
+
     async getProducts({ filter, success, error }: productsInput) {
       const { reference, page = 1, limit = 10 } = filter;
       try {

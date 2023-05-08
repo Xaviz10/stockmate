@@ -104,11 +104,6 @@ export function useProductsViewModel() {
       headerName: "NAME",
       flex: 0.4,
     },
-    // {
-    //   field: "description",
-    //   headerName: "DESCRIPTION",
-    //   flex: 0.3,
-    // },
     {
       field: "price",
       headerName: "PRICE",

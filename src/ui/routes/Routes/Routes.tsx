@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Products, Orders, NewProduct } from "../../pages";
+import { Products, Orders, NewProduct, NewOrder } from "../../pages";
 import { PrivateRoute } from "./PrivateRoute";
 
 export const AppRoutes = () => (
@@ -8,6 +8,7 @@ export const AppRoutes = () => (
     {/* Public */}
     <Route path="/orders" element={<Orders />} />
     <Route path="/products" element={<Products />} />
+    <Route path="/new-order" element={<NewOrder />} />
     <Route path="/new-product" element={<NewProduct />} />
     <Route path="/" element={<Orders />} />
 

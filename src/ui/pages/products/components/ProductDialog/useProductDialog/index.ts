@@ -46,7 +46,6 @@ export function useProductDialog(productId: number, handleClose?: () => void) {
       price: data.price,
       taxes: data.taxes,
     };
-    console.log(productData);
     editProduct({
       product: productData,
       success: handleSuccessEdit,
