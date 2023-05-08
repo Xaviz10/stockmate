@@ -16,6 +16,7 @@ import {
   StockMateIcon,
 } from "../../assets/Icons";
 import { ReactComponent as StockMateCopy } from "../../assets/images/stockMateCopy.svg";
+import { AddShoppingCart } from "@mui/icons-material";
 import { Button } from "../Button";
 import { useDrawer } from "./useDrawer";
 
@@ -47,6 +48,16 @@ export const Drawer: FC<DrawerProps> = ({
             sx={{ display: openState ? "inline-block" : "none" }}
           >
             {openState ? "Order Management" : ""}
+          </StyledListItemText>
+        </StyledListItemButton>
+        <StyledListItemButton onClick={() => handleNavigation("/new-order")}>
+          <StyledListItemIcon>
+            <AddShoppingCart />
+          </StyledListItemIcon>
+          <StyledListItemText
+            sx={{ display: openState ? "inline-block" : "none" }}
+          >
+            {openState ? "New order" : ""}
           </StyledListItemText>
         </StyledListItemButton>
         <StyledListItemButton onClick={() => handleNavigation("/products")}>

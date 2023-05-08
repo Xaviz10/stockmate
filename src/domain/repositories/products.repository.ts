@@ -21,6 +21,7 @@ export interface productInput extends handleResponse {
 }
 
 export interface ProductsRepository {
+  getAllProducts({ success, error }: handleResponse): void;
   getProducts({ filter, success, error }: productsInput): void;
   getProductById({ id, success, error }: productByIdInput): void;
   postNewProduct({ product, success, error }: newProductInput): void;

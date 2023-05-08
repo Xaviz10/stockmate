@@ -5,9 +5,16 @@ import {
   productsInput,
   ProductsRepository,
 } from "../../repositories";
+import { handleResponse } from "../../shared";
 
 export function useCaseProducts(repository: ProductsRepository) {
   return {
+    getAllProducts({ success, error }: handleResponse) {
+      return repository.getAllProducts({
+        success,
+        error,
+      });
+    },
     getProducts({ filter, success, error }: productsInput) {
       return repository.getProducts({
         filter,
